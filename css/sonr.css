@@ -1,0 +1,26 @@
+progress {
+    border: 0;
+    background: rgba(238, 238, 238, 0);
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    margin: 2px auto;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(+5%) translateX(+0.5%);
+}
+
+progress::-moz-progress-bar {
+    border-radius: 10px;
+    background: linear-gradient(270deg, #2af598 0%, #009efd 100%);
+}
+
+progress::-webkit-progress-bar {
+    background: rgba(238, 238, 238, 0);
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 10px;
+    background: linear-gradient(270deg, #2af598 0%, #009efd 100%);
+}
