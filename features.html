@@ -27,51 +27,74 @@
 </head>
 
 <body>
-    <header class="header-global">
-        <nav class="navbar navbar-expand-lg navbar-transparent navbar-light shadow-soft navbar-theme-primary mb-4">
-            <div class="container position-relative">
-                <div class="navbar-collapse collapse" id="navbar-default-primary">
-                    <div class="navbar-collapse-header">
-                        <div class="row">
-                            <div class="col-6 collapse-brand">
-                                <a class="navbar-brand mr-lg-5" href="index.html">
-                                    <img class="navbar-brand-dark" src="assets/img/brand/light.svg" alt="pixel logo">
-                                    <img class="navbar-brand-light" src="assets/img/brand/dark.svg" alt="pixel logo">
-                                </a>
-                            </div>
+    <nav class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light" id="navbar-main">
+        <div class="container position-relative bg-soft">
+            <a class="navbar-brand shadow-soft py-2 px-2 rounded border border-light mt-sm-3 mr-3" href="index.html">
+                <img class="navbar-brand-light" src="assets/img/logos/icon-logo.svg" alt="Sonr Icon">
+            </a>
+            <div class="navbar-collapse collapse" id="navbar-default-primary">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a class="navbar-brand mr-lg-5" href="index.html">
+                                <img class="navbar-brand-light" src="assets/img/logos/text-logo.png" alt="Sonr Icon">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close ">
+                            <i class="fas fa-times" data-toggle="collapse" role="button"
+                                data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
+                                aria-expanded="false" aria-label="Toggle navigation"></i>
                         </div>
                     </div>
-                    <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-                        <li class="nav-item">
-                            <a href="index.html#about" target="_self" data-target="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="demo.html" target="_self" data-target="#demo" class="nav-link">Demo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="features.html" target="_self" class="nav-link" data-toggle="modal"
-                                data-target="#modal-features">Features</a>
-                        </li>
-                    </ul>
                 </div>
-                <div class="d-flex align-items-center">
-                    <button class="btn btn-primary text-secondary btn-pill mr-3 typeform-share button" target="_blank"
-                        type="button">
-                        <span class="mr-1"><span class="fas fa-rocket"></span></span>
-                        <a class="typeform-share link"
-                            href="https://form.typeform.com/to/lBtisQHc?typeform-medium=embed-snippet" data-mode="popup"
-                            style="color:#4F63FF;text-decoration:none;font-size:17px;" data-size="70"
-                            data-submit-close-delay="1" target="_blank">Sign Up
-                            for Beta </a>
-                        <script> (function () {var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) {js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q)} })()</script>
-                    </button>
-                </div>
+                <ul class="navbar-nav navbar-nav-hover align-items-lg-center list-style-none">
+                    <li class="nav-item">
+                        <a href="index.html" target="_self" class="nav-link" role="button">
+                            <span class="nav-link-inner-text mb-sm-3 mb-md-0">
+                                <h5 class="font-weight-normal">About</h3>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="demo.html" target="_self" class="nav-link" role="button">
+                            <span class="nav-link-inner-text mb-sm-3 mb-md-0">
+                                <h5 class="font-weight-normal">Demo</h3>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="features.html" target="_self" class="nav-link" role="button">
+                            <span class="nav-link-inner-text mb-sm-3 mb-md-0">
+                                <h5 class="font-weight-normal">Features</h3>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-primary text-secondary btn-pill mr-3 typeform-share button" target="_blank"
+                    type="button">
+                    <span class="mr-1"><span class="fas fa-rocket"></span></span>
+                    <a class="typeform-share link"
+                        href="https://form.typeform.com/to/lBtisQHc?typeform-medium=embed-snippet" data-mode="popup"
+                        style="color:#4F63FF;text-decoration:none;font-size:17px;" data-size="70"
+                        data-submit-close-delay="1" target="_blank">Sign Up
+                        for Beta </a>
+                    <script> (function () {var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) {js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q)} })()</script>
+                </button>
+                <button class="navbar-toggler ml-2" type="button" data-toggle="collapse"
+                    data-target="#navbar-default-primary" aria-controls="navbar-default-primary" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
     <main>
         <!-- Hero -->
-        <section class="section section bg-soft pb-5">
+        <section class="section bg-soft align-items-center pt-8">
             <div id="about" class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 justify-content-center ">
